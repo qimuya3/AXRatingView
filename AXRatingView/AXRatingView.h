@@ -4,6 +4,10 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ *  注意：必须先设置numberOfStar，再设置value，minimumValue等。
+            其次，numberOfStar 必须等于最大分值，绘制才能正确
+ */
 @interface AXRatingView : UIControl {
   CALayer *_starMaskLayer;
   CALayer *_highlightLayer;
